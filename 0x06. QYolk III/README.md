@@ -1,6 +1,5 @@
-### 0x04. QYolk II
+### 0x06. QYolk III
 
 + [yolk](https://pypi.python.org/pypi/yolk3k) GUI version using PyQt4
-++ Qyolk I
-+ Added tab widget
-+ Added info label. it explains about current tab when tab changed
+++ Qyolk II
++ Add Update tab, shows current versions of packages and available versions
