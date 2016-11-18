@@ -66,7 +66,7 @@ class Ui_QYolk(object):
         QtCore.QMetaObject.connectSlotsByName(QYolk)
 
     def retranslateUi(self, QYolk):
-        QYolk.setWindowTitle(_translate("QYolk", "QYolk", None))
+        QYolk.setWindowTitle(_translate("QYolk", "QYolk II", None))
         self.all_list.headerItem().setText(0, _translate("QYolk", "Package Name", None))
         self.all_list.headerItem().setText(1, _translate("QYolk", "Package name", None))
         self.all_list.headerItem().setText(2, _translate("QYolk", "Status", None))
