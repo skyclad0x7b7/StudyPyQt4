@@ -13,8 +13,8 @@ class StartQT4(QtGui.QMainWindow):
 		self.ui.treeList.setColumnWidth(0, 200)
 		self.ui.treeList.setColumnWidth(1, 200)
 
-		packages = yolklib.Distributions()
-		for pkg in packages.get_distributions('all'):
+		packages = yolklib.get_distributions('all')
+		for pkg in packages:
 			newItem = QtGui.QTreeWidgetItem(self.ui.treeList)
 			pk = str(pkg[0]).split(' ')
 			if pkg[1]:

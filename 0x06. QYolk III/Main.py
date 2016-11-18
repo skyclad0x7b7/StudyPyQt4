@@ -49,6 +49,12 @@ class Ui_QYolk(object):
         self.not_active_list.setGeometry(QtCore.QRect(0, 0, 541, 261))
         self.not_active_list.setObjectName(_fromUtf8("not_active_list"))
         self.tab_widget.addTab(self.tab_not_active, _fromUtf8(""))
+        self.tab_update = QtGui.QWidget()
+        self.tab_update.setObjectName(_fromUtf8("tab_update"))
+        self.update_list = QtGui.QTreeWidget(self.tab_update)
+        self.update_list.setGeometry(QtCore.QRect(0, 0, 551, 271))
+        self.update_list.setObjectName(_fromUtf8("update_list"))
+        self.tab_widget.addTab(self.tab_update, _fromUtf8(""))
         self.info_label = QtGui.QLabel(self.centralwidget)
         self.info_label.setGeometry(QtCore.QRect(10, 285, 541, 31))
         self.info_label.setObjectName(_fromUtf8("info_label"))
@@ -66,7 +72,7 @@ class Ui_QYolk(object):
         QtCore.QMetaObject.connectSlotsByName(QYolk)
 
     def retranslateUi(self, QYolk):
-        QYolk.setWindowTitle(_translate("QYolk", "QYolk II", None))
+        QYolk.setWindowTitle(_translate("QYolk", "QYolk III", None))
         self.all_list.headerItem().setText(0, _translate("QYolk", "Package Name", None))
         self.all_list.headerItem().setText(1, _translate("QYolk", "Version", None))
         self.all_list.headerItem().setText(2, _translate("QYolk", "Status", None))
@@ -79,5 +85,9 @@ class Ui_QYolk(object):
         self.not_active_list.headerItem().setText(1, _translate("QYolk", "Version", None))
         self.not_active_list.headerItem().setText(2, _translate("QYolk", "Status", None))
         self.tab_widget.setTabText(self.tab_widget.indexOf(self.tab_not_active), _translate("QYolk", "Not Active", None))
+        self.update_list.headerItem().setText(0, _translate("QYolk", "Package Name", None))
+        self.update_list.headerItem().setText(1, _translate("QYolk", "Installed Version", None))
+        self.update_list.headerItem().setText(2, _translate("QYolk", "Available Version", None))
+        self.tab_widget.setTabText(self.tab_widget.indexOf(self.tab_update), _translate("QYolk", "Updates", None))
         self.info_label.setText(_translate("QYolk", "TextLabel", None))
 
